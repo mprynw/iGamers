@@ -3,10 +3,12 @@ const client = new Discord.Client();
 
 
 client.on('ready', function()  => {
-    let status = [`iGamers | Indonesian Gamers Community`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
-    let random = Math.floor(Math.random * status.length)
     bot.user.setStatus('STREAMING'); 
-    bot.user.setGame(status[random]); 
+    setInterval(() =>  {
+        let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
+        let random = Math.floor(Math.random * status.length)
+        bot.user.setGame(statsus[random]); 
+    }, 20000);
     console.log('I am ready!');
 });
 
