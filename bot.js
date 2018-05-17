@@ -7,7 +7,7 @@ bot.on("ready", () => {
  setInterval(() => {
     let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
     let random = Math.floor(Math.random() * status.length)
-    bot.user.setGame(status[random], 'https://twitch.tv/forcestopgm'); 
+    bot.user.setActivity(status[random], 'https://twitch.tv/forcestopgm'); 
    }, 20000);
     console.log(`${bot.user.username} Sedang ONLINE!`); 
 });
