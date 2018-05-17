@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 
 client.on("ready", () => { 
-    client.user.setStatus('online'); 
+    client.user.setStatus('STREAMING'); 
     setInterval(() => {
     let status = [`iGamers | Indonesian Game`, `On ${client.guilds.size} Server`, `With ${client.users.size} User`] 
     let random = Math.floor(Math.random() * status.length)
