@@ -2,13 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-client.on('ready', function()  => {
-    bot.user.setStatus('STREAMING'); 
-    setInterval(() =>  {
-        let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
-        let random = Math.floor(Math.random * status.length)
-        bot.user.setGame(statsus[random]); 
-    }, 20000);
+client.on('ready', () => { 
+ bot.user.setStatus('STREAMING'); 
+ setInterval(() => {
+    let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
+    let random = Math.floor(Math.random() * status.length)
+    bot.user.setGame(status[random], 'https://twitch.tv/forcestopgm'); 
+   }, 20000);
     console.log('I am ready!');
 });
 
