@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-client.on('ready', () => {
+client.on('ready', function randomStatus()  => {
     let status = [`iGamers | Indonesian Gamers Community`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
     let random = Math.floor(Math.random * status.length)
     bot.user.setStatus('STREAMING'); 
