@@ -3,12 +3,7 @@ const client = new Discord.Client();
 
 
 bot.on("ready", () => { 
- bot.user.setStatus('STREAMING'); 
- setInterval(() => {
-    let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
-    let random = Math.floor(Math.random() * status.length)
-    bot.user.setActivity(status[random], 'https://twitch.tv/forcestopgm'); 
-   }, 20000);
+ bot.user.setStatus('STREAMING');
     console.log(`${bot.user.username} Sedang ONLINE!`); 
 });
 
