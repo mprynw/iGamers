@@ -4,7 +4,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setActivity('iGamers Bot')
 });
 
 client.on('message', message => {
