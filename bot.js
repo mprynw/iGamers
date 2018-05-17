@@ -6,7 +6,7 @@ client.on('ready', () => {
     let status = [`iGamers | Indonesian Gamers Community`, `On ${bot.guilds.size} Server`, `With ${bot.users.size} User`] 
     let random = Math.floor(Math.random * status.length)
     bot.user.setStatus('STREAMING'); 
-    bot.user.setGame(statsus[random]); 
+    bot.user.setGame(status[random]); 
     console.log('I am ready!');
 });
 
