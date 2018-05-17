@@ -5,9 +5,9 @@ const client = new Discord.Client();
 client.on("ready", () => { 
     client.user.setStatus('STREAMING'); 
     setInterval(() => {
-    let status = [`Bantuan? | >help`, `InFamous Club`, `ForceStop Channel`, `On ${client.guilds.size} Server`, `With ${client.users.size} User`] 
+    let status = [`iGamers | Indonesian Game`, `On ${client.guilds.size} Server`, `With ${client.users.size} User`] 
     let random = Math.floor(Math.random() * status.length)
-    client.user.setGame(status[random], 'https://twitch.tv/forcestopgm'); 
+    client.user.setGame(status[random], 'https://discord.gg/dR422Nu'); 
    }, 20000);
     console.log(`${client.user.username} Sedang ONLINE!`); 
 });
