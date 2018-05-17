@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-bot.on("ready", () => { 
- bot.user.setStatus('STREAMING');
-    console.log(`${bot.user.username} Sedang ONLINE!`); 
+client.on('ready', () => {
+    console.log('I am ready!');
+    bot.user.setActivity('iGamers Bot')
 });
 
 client.on('message', message => {
