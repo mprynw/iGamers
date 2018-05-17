@@ -7,7 +7,7 @@ client.on("ready", () => {
     setInterval(() => {
     let status = [`iGamers | Indonesian Game`, `On ${client.guilds.size} Server`, `With ${client.users.size} User`] 
     let random = Math.floor(Math.random() * status.length)
-    client.user.setGame(status[random], 'iGamers'); 
+    client.user.setGame(status[random], 'https://www.twitch.tv/igamersina'); 
    }, 20000);
     console.log(`${client.user.username} Sedang ONLINE!`); 
 });
