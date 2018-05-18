@@ -14,9 +14,10 @@ client.on("ready", () => {
 
 
 client.on('message', message => {
-    if (message.content === 'iGamers') {
+    if (message.content.toLowerCase() === 'igamers') {
       message.reply('Ini invite link untuk iGamers | Indonesian Game! \n Tolong digunakan dengan bijak ya :D \n pakai link ini yaa >> https://discord.gg/dR422Nu');
        }
+
 });
 
 client.login(process.env.BOT_TOKEN)
