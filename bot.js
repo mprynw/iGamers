@@ -16,7 +16,7 @@ client.on("ready", () => {
 client.on('message', message => {
     if (message.content === 'iGamers') {
       message.reply('Ini invite link untuk iGamers | Indonesian Game! \n Tolong digunakan dengan bijak ya :D \n pakai link ini yaa >> https://discord.gg/dR422Nu');
-       }}
+       }
     if (message.content === 'welcome') {
         const embed = new Discord.RichEmbed()
   .setTitle("Welcome to iGamers")
