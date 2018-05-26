@@ -29,24 +29,23 @@ client.on('message', message => {
        }
 
     if (message.content.toLowerCase().includes("")){
-	if(message.channel.id == '429555645428269062') {
-		const welcemb = new Discord.RichEmbed()
-			.setTitle("Welcome to iGamers")
-			.setURL("https://discord.gg/dR422Nu")
-			.setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
-			.setDescription("iGamers merupakan server Komunitas Game meliputi game PC, Android, IOS, PS, XBOX, Web Game, dan lain sebagainya.  Server ini akan memfasilitasi notifikasi update, game baru, glitch, bug, giveaway. Jadi Stay Tune ya!!\nJangan lupa share link invite kami! \n https://discord.gg/dR422Nu")
-			.addField("Step 1", "Setelah kamu bergabung kamu harus membaca RULES server kami dan akan mendapatkan role Member iGamers untuk melihat seluruh server! Dapat diklik di link berikut: https://discord.gg/dR422Nu.")
-			.addField("Step 2", "Kemudian Kamu bisa mengambil role game lainnya untuk melihat channel game lainnya: https://discord.gg/f7KTMmd")
-			.setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
-			.setImage("https://i.imgur.com/OgupJFq.gif")
-			.setThumbnail("https://i.imgur.com/1UbbnaG.jpg")
-			.setColor(0x3DB4FF)
-			/*
-			 * Takes a Date object, defaults to current date.
-			 */
-			.setTimestamp()
-		message.author.send({embed: welcemb});
-		}
+	if(message.channel.id !== "412247476859568138") return
+	const welcemb = new Discord.RichEmbed()
+		.setTitle("Welcome to iGamers")
+		.setURL("https://discord.gg/dR422Nu")
+		.setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
+		.setDescription("iGamers merupakan server Komunitas Game meliputi game PC, Android, IOS, PS, XBOX, Web Game, dan lain sebagainya.  Server ini akan memfasilitasi notifikasi update, game baru, glitch, bug, giveaway. Jadi Stay Tune ya!!\nJangan lupa share link invite kami! \n https://discord.gg/dR422Nu")
+		.addField("Step 1", "Setelah kamu bergabung kamu harus membaca RULES server kami dan akan mendapatkan role Member iGamers untuk melihat seluruh server! Dapat diklik di link berikut: https://discord.gg/dR422Nu.")
+		.addField("Step 2", "Kemudian Kamu bisa mengambil role game lainnya untuk melihat channel game lainnya: https://discord.gg/f7KTMmd")
+		.setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
+		.setImage("https://i.imgur.com/OgupJFq.gif")
+		.setThumbnail("https://i.imgur.com/1UbbnaG.jpg")
+		.setColor(0x3DB4FF)
+		/*
+		 * Takes a Date object, defaults to current date.
+		 */
+		.setTimestamp()
+	message.author.send({embed: welcemb});
     }
 });
 
