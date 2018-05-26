@@ -29,7 +29,7 @@ client.on('message', message => {
        }
 
     if (message.content.toLowerCase().includes("")){
-	if(!message.channel.id === "412247476859568138") {return;}
+	if(!message.channel.id === "441519563868340224") {return;}
 	const welcemb = new Discord.RichEmbed()
 		.setTitle("Welcome to iGamers")
 		.setURL("https://discord.gg/dR422Nu")
