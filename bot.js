@@ -65,7 +65,7 @@ client.on("guildMemberAdd", (member) => {
 
 });
 
-client.on('message', message => {
+client.on('message', async message => {
     if (message.author.bot || message.author.id === client.user.id) return;
     if (!message.channel) return;
     if (message.channel.type === "dm") {
