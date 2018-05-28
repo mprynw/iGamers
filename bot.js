@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const newUsers = new Discord.Collection();
 
 client.on("ready", () => { 
     client.user.setStatus('STREAMING'); 
