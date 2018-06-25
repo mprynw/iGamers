@@ -40,7 +40,7 @@ client.on("guildMemberAdd", (member) => {
          * Takes a Date object, defaults to current date.
          */
         .setTimestamp()
-    client.channels.get('419619500334514191').send({
+    client.channels.get('414336736697516042').send({
         embed: welcema
     });
     newUsers[guild.id].clear();
@@ -49,8 +49,7 @@ client.on("guildMemberAdd", (member) => {
         .setURL("https://discord.gg/dR422Nu")
         .setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
         .setDescription("iGamers merupakan server Komunitas Game meliputi game PC, Android, IOS, PS, XBOX, Web Game, dan lain sebagainya.  Server ini akan memfasilitasi notifikasi update, game baru, glitch, bug, giveaway. Jadi Stay Tune ya!!\nJangan lupa share link invite kami! \nhttps://discord.gg/dR422Nu")
-        .addField("Step 1", "Setelah kamu bergabung kamu harus membaca RULES server kami dan akan mendapatkan role Member iGamers untuk melihat seluruh server! Dapat diklik di link berikut:\nhttps://discord.gg/dR422Nu.")
-        .addField("Step 2", "Kemudian Kamu bisa mengambil role game lainnya untuk melihat channel game lainnya:\nhttps://discord.gg/f7KTMmd")
+        .addField("-->", "Kamu bisa mengambil role game lainnya untuk mempermudah mencari teman bermain di:\nhttps://discord.gg/f7KTMmd")
         .setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
         .setImage("https://i.imgur.com/OgupJFq.gif")
         .setThumbnail("https://i.imgur.com/1UbbnaG.jpg")
@@ -74,28 +73,6 @@ client.on('message', async message => {
     }
     if (message.content.toLowerCase() === 'igamers') {
         message.reply('Ini invite link untuk iGamers | Indonesian Game! \n Tolong digunakan dengan bijak ya :D \n pakai link ini yaa >> https://discord.gg/dR422Nu');
-    }
-
-    if (message.content.toLowerCase().includes("")) {
-        if (message.channel.id !== "441519563868340224") return
-        const welcemb = new Discord.RichEmbed()
-            .setTitle("Welcome to iGamers")
-            .setURL("https://discord.gg/dR422Nu")
-            .setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
-            .setDescription("iGamers merupakan server Komunitas Game meliputi game PC, Android, IOS, PS, XBOX, Web Game, dan lain sebagainya.  Server ini akan memfasilitasi notifikasi update, game baru, glitch, bug, giveaway. Jadi Stay Tune ya!!\nJangan lupa share link invite kami! \n https://discord.gg/dR422Nu")
-            .addField("Step 1", "Setelah kamu bergabung kamu harus membaca RULES server kami dan akan mendapatkan role Member iGamers untuk melihat seluruh server! Dapat diklik di link berikut: https://discord.gg/dR422Nu.")
-            .addField("Step 2", "Kemudian Kamu bisa mengambil role game lainnya untuk melihat channel game lainnya: https://discord.gg/f7KTMmd")
-            .setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
-            .setImage("https://i.imgur.com/OgupJFq.gif")
-            .setThumbnail("https://i.imgur.com/1UbbnaG.jpg")
-            .setColor(0x3DB4FF)
-            /*
-             * Takes a Date object, defaults to current date.
-             */
-            .setTimestamp()
-        message.author.send({
-            embed: welcemb
-        });
     }
 });
 
