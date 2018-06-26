@@ -22,48 +22,6 @@ client.on("guildDelete", guild => {
     console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
 });
 
-client.on("guildMemberAdd", (member) => {
-    const guild = member.guild;
-    if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
-    newUsers[guild.id].set(member.id, member.user);
-    const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
-    const welcema = new Discord.RichEmbed()
-        .setTitle("Welcome to iGamers")
-        .setURL("https://discord.gg/dR422Nu")
-        .setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
-        .addField("Username ", member.user.username, true)
-        .addField("UserID ", member.user.id, true)
-        .setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
-        .setThumbnail(member.user.displayAvatarURL)
-        .setColor(0x3DB4FF)
-        /*
-         * Takes a Date object, defaults to current date.
-         */
-        .setTimestamp()
-    client.channels.get('414336736697516042').send({
-        embed: welcema
-    });
-    newUsers[guild.id].clear();
-    const welcemb = new Discord.RichEmbed()
-        .setTitle("Welcome to iGamers")
-        .setURL("https://discord.gg/dR422Nu")
-        .setAuthor("iGamers", "https://i.imgur.com/1UbbnaG.jpg")
-        .setDescription("iGamers merupakan server Komunitas Game meliputi game PC, Android, IOS, PS, XBOX, Web Game, dan lain sebagainya.  Server ini akan memfasilitasi notifikasi update, game baru, glitch, bug, giveaway. Jadi Stay Tune ya!!\nJangan lupa share link invite kami! \nhttps://discord.gg/dR422Nu")
-        .addField("-->", "Kamu bisa mengambil role game lainnya untuk mempermudah mencari teman bermain di:\nhttps://discord.gg/f7KTMmd")
-        .setFooter("This bot created by mprw#2329", "https://i.imgur.com/1UbbnaG.jpg")
-        .setImage("https://i.imgur.com/OgupJFq.gif")
-        .setThumbnail("https://i.imgur.com/1UbbnaG.jpg")
-        .setColor(0x3DB4FF)
-        /*
-         * Takes a Date object, defaults to current date.
-         */
-        .setTimestamp()
-    member.user.send({
-        embed: welcemb
-    });
-
-});
-
 client.on('message', async message => {
     if (message.author.bot || message.author.id === client.user.id) return;
     if (!message.channel) return;
