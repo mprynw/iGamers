@@ -30,7 +30,7 @@ client.on('message', async message => {
         await me.send(`${message.author} (${message.author}) sent me a dm:\n${message}`);
     }
     if (message.content.toLowerCase() === 'igamers') {
-        message.reply('Ini invite link untuk iGamers | Indonesian Game! \n Tolong digunakan dengan bijak ya :D \n pakai link ini yaa >> https://discord.gg/dR422Nu');
+        message.reply('Ini invite link untuk iGamers | Indonesian Game! \n Tolong digunakan dengan bijak ya :D \n pakai link ini yaa >> https://igamers.site/');
     }
 });
 
